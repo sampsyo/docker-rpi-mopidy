@@ -13,4 +13,4 @@ Build:
 
 Run:
 
-    docker run --device /dev/snd -p 6680:6680 -t rpi-mopidy
+    docker run --device /dev/snd -p 6680:6680 --restart=unless-stopped --detach=true -t rpi-mopidy
